@@ -18,7 +18,11 @@ module.exports = {
     extensions: ['.js', '.vue', '.svg'],
     alias: {
       'vue': 'vue/dist/vue.js',
-      'layouts': path.resolve(__dirname, 'client/layouts/')
+      'layouts': path.resolve(__dirname, 'client/layouts/'),
+      'pages': path.resolve(__dirname, 'client/pages/'),
+      'components': path.resolve(__dirname, 'client/components/'),
+      'plugins': path.resolve(__dirname, 'client/plugins/'),
+      'mixins': path.resolve(__dirname, 'client/mixins/')
     }
   },
   module: {

@@ -45,5 +45,6 @@ async function initChain () {
   } else {
     console.log('APP STARTED')
   }
+  await nodes.fsModelCreate(getCtx(), {errors: [], msg: {folder: 'models', data: {id: 'user'}}})
 }
 initChain()

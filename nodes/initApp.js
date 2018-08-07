@@ -7,7 +7,7 @@ module.exports = function (ctx, flow) {
         flow = await ctx.nodes.checkConfig(ctx, flow)
         if (flow.errors.length > 0) throw flow
         console.log('config good')
-        
+        // '0.0.0.0',
         ctx.server.listen(ctx.config.port, '0.0.0.0', () => {
           console.log('Server started at port: ' + ctx.config.port)
         })

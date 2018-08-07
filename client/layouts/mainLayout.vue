@@ -21,8 +21,11 @@ export default {
     if (!token) {
       next(vm => {
         console.log('ml: no token!')
-//         vm.$router.push('../login')
+        // vm.$router.push('../login')
       })
+    } else {
+      console.log('ml: token OK')
+      next()
     }
   },
   async mounted () {

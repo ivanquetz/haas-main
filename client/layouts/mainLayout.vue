@@ -1,8 +1,6 @@
 <template lang="pug">
 div(:style=`{position: 'relative'}`).row.full-width.window-height.items-center.justify-center
-  h1 hello
-  h1 aslkdmlkasdm
-  .row.full-width
+  span popsters.online
 </template>
 
 <script>
@@ -25,4 +23,3 @@ export default {
 
 <style lang="stylus">
 </style>
-

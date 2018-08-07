@@ -19,7 +19,6 @@ module.exports = function (ctx,flow) {
       }
     })
     
-    console.log('initAjv_done')
     resolve(ajv)
   })
 }

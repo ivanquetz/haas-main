@@ -12,8 +12,12 @@ module.exports = function (ctx, flow) {
             errors: {type: 'array', maxItems: 0}
           }
         }
+        // console.log('checkConfig.ctx.ajv', ctx.ajv)
         flow = await ctx.nodes.validate(ctx,flow,flowSchema,flow)
-        if (flow.errors.length > 0) throw flow
+        if (flow.errors.length > 0) {
+          console.log('config bad')
+          throw flow
+        }
         console.log('checkConfig_start')
         
         var configSchema = {
